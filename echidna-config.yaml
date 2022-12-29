@@ -1,0 +1,11 @@
+balanceContract: 10000000000000000000000
+# Allow for multi-abi use
+multi-abi: true
+
+# allow the @openzeppelin/contracts to be remapped to the node_modules folder
+# use --config echidna-config.yaml to use this config file
+cryticArgs:
+  [
+    "--solc-remaps",
+    "@openzeppelin/contracts/=node_modules/@openzeppelin/contracts/",
+  ]
